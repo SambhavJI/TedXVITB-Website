@@ -1,0 +1,188 @@
+/* Enable dark-only rendering */
+* {
+  color-scheme: dark;
+}
+
+/* ========================================
+   SCROLL ANIMATION CLASSES
+   Using IntersectionObserver (JS-based)
+   ======================================== */
+
+/* Hidden state - before element enters viewport */
+.scroll-hidden {
+  opacity: 0;
+}
+
+/* Visible state - when element enters viewport */
+.scroll-visible {
+  opacity: 1;
+}
+
+/* ----------------------------------------
+   TEXT ANIMATIONS
+   ---------------------------------------- */
+.scroll-text {
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out, filter 0.8s ease-out;
+}
+
+.scroll-text.scroll-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  filter: blur(4px);
+}
+
+.scroll-text.scroll-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+/* ----------------------------------------
+   IMAGE ANIMATIONS
+   ---------------------------------------- */
+.scroll-image {
+  transition: opacity 1s ease-out, transform 1s ease-out, filter 1s ease-out;
+}
+
+.scroll-image.scroll-hidden {
+  opacity: 0;
+  transform: translateY(60px) scale(0.9);
+  filter: saturate(0) contrast(2) brightness(0.3) blur(8px);
+}
+
+.scroll-image.scroll-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: saturate(1) contrast(1) brightness(1) blur(0);
+}
+
+/* ----------------------------------------
+   SECTION ANIMATIONS
+   ---------------------------------------- */
+.scroll-section {
+  transition: opacity 0.6s ease-out;
+}
+
+.scroll-section.scroll-hidden {
+  opacity: 0;
+}
+
+.scroll-section.scroll-visible {
+  opacity: 1;
+}
+
+/* ----------------------------------------
+   CARD ANIMATIONS
+   ---------------------------------------- */
+.scroll-card {
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-card.scroll-hidden {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+}
+
+.scroll-card.scroll-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* ----------------------------------------
+   SLIDE ANIMATIONS
+   ---------------------------------------- */
+.scroll-left {
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-left.scroll-hidden {
+  opacity: 0;
+  transform: translateX(-60px);
+}
+
+.scroll-left.scroll-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.scroll-right {
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-right.scroll-hidden {
+  opacity: 0;
+  transform: translateX(60px);
+}
+
+.scroll-right.scroll-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ----------------------------------------
+   SCALE ANIMATIONS
+   ---------------------------------------- */
+.scroll-scale {
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-scale.scroll-hidden {
+  opacity: 0;
+  transform: scale(0.85);
+}
+
+.scroll-scale.scroll-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ----------------------------------------
+   STAGGERED DELAYS FOR CHILD ELEMENTS
+   ---------------------------------------- */
+.scroll-text:nth-child(1),
+.scroll-card:nth-child(1) {
+  transition-delay: 0ms;
+}
+
+.scroll-text:nth-child(2),
+.scroll-card:nth-child(2) {
+  transition-delay: 100ms;
+}
+
+.scroll-text:nth-child(3),
+.scroll-card:nth-child(3) {
+  transition-delay: 200ms;
+}
+
+.scroll-text:nth-child(4),
+.scroll-card:nth-child(4) {
+  transition-delay: 300ms;
+}
+
+.scroll-text:nth-child(5),
+.scroll-card:nth-child(5) {
+  transition-delay: 400ms;
+}
+
+/* ----------------------------------------
+   REDUCED MOTION SUPPORT
+   ---------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+
+  .scroll-text,
+  .scroll-image,
+  .scroll-section,
+  .scroll-card,
+  .scroll-left,
+  .scroll-right,
+  .scroll-scale {
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+
+  .scroll-hidden {
+    opacity: 1 !important;
+  }
+}

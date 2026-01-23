@@ -1,0 +1,66 @@
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+  background-color: #000000;
+}
+
+body {
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  background-color: #000000;
+  min-height: 100vh;
+}
+
+section {
+  border: none;
+}
+
+/* HIDDEN CURSOR LOGIC */
+/* When the custom cursor is active, forcefully hide the default cursor on EVERYTHING */
+body.custom-cursor-active,
+body.custom-cursor-active * {
+  cursor: none !important;
+}
+
+/* Fade up animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Team marquee pause on hover */
+.team-container:hover .animate-marquee {
+  animation-play-state: paused;
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(220, 38, 38, 0.1);
+}
+
+/* Subtle glow effect */
+.glow-hover {
+  transition: box-shadow 0.3s ease;
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 30px rgba(220, 38, 38, 0.15);
+}
+
+@import "tailwindcss";
+@plugin "daisyui"
