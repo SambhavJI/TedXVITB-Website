@@ -45,10 +45,10 @@ export default function App() {
 
       {/* NEWSLETTER / BLOG */}
       <SideBySide
-        img="/1767770582221.jpg"
+        img="/public/1766179522124.jpg"
         altText="TEDx Newsletter"
-        heading="From Cozy Blankets to Open Conversations"
-        description="While most of our college was soaking in lazy unexpected vacations back home, wrapped in cozy blankets and comfort food, BAMMMMMM …"
+        heading="TEDxVITBhopal 2025-26 : Comeback? …but what happened?"
+        description="Every campus has a dream waiting for the right people to wake it up.If TED has taught us anything, it’s that one idea can rewrite the script. And this year, we decided to stop waiting for ideas…"
         buttonText="Read our Newsletter"
       />
 
