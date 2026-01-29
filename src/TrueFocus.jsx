@@ -8,11 +8,12 @@ const TrueFocus = ({
   blurAmount = 5,
   borderColor = 'green',
   glowColor = 'rgba(0, 255, 0, 0.6)',
-  animationDuration = 0.5,
+  animationDuration = 2,
   pauseBetweenAnimations = 1
 }) => {
   const words = sentence.split(separator);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [animationPhase, setAnimationPhase] = useState(0);
   const [lastActiveIndex, setLastActiveIndex] = useState(null);
   const containerRef = useRef(null);
   const wordRefs = useRef([]);
@@ -22,7 +23,13 @@ const TrueFocus = ({
     if (!manualMode) {
       const interval = setInterval(
         () => {
-          setCurrentIndex(prev => (prev + 1) % words.length);
+          setAnimationPhase(prev => {
+            const nextPhase = (prev + 1) % 3;
+            if (nextPhase === 0) {
+              setCurrentIndex(prevIdx => (prevIdx + 1) % words.length);
+            }
+            return nextPhase;
+          });
         },
         (animationDuration + pauseBetweenAnimations) * 1000
       );
@@ -36,15 +43,39 @@ const TrueFocus = ({
     if (!wordRefs.current[currentIndex] || !containerRef.current) return;
 
     const parentRect = containerRef.current.getBoundingClientRect();
-    const activeRect = wordRefs.current[currentIndex].getBoundingClientRect();
+    const parentLeft = parentRect.left;
+    const parentTop = parentRect.top;
 
-    setFocusRect({
-      x: activeRect.left - parentRect.left,
-      y: activeRect.top - parentRect.top,
-      width: activeRect.width,
-      height: activeRect.height
-    });
-  }, [currentIndex, words.length]);
+    if (animationPhase === 1) {
+      // Phase 1: cover both current and next word
+      const nextIndex = (currentIndex + 1) % words.length;
+      const rect1 = wordRefs.current[currentIndex].getBoundingClientRect();
+      const rect2 = wordRefs.current[nextIndex].getBoundingClientRect();
+
+      // Calculate bounding box that covers both words
+      const left = Math.min(rect1.left, rect2.left) - parentLeft;
+      const right = Math.max(rect1.right, rect2.right) - parentLeft;
+      const top = Math.min(rect1.top, rect2.top) - parentTop;
+      const bottom = Math.max(rect1.bottom, rect2.bottom) - parentTop;
+
+      setFocusRect({
+        x: left,
+        y: top,
+        width: right - left,
+        height: bottom - top
+      });
+    } else {
+      // Phase 0 and 2: cover only current word
+      const activeRect = wordRefs.current[currentIndex].getBoundingClientRect();
+
+      setFocusRect({
+        x: activeRect.left - parentLeft,
+        y: activeRect.top - parentTop,
+        width: activeRect.width,
+        height: activeRect.height
+      });
+    }
+  }, [currentIndex, animationPhase, words.length]);
 
   const handleMouseEnter = index => {
     if (manualMode) {
@@ -66,6 +97,20 @@ const TrueFocus = ({
       style={{ outline: 'none', userSelect: 'none' }}
     >
       {words.map((word, index) => {
+        let blurValue = 0;
+        
+        if (manualMode) {
+          blurValue = index === currentIndex ? 0 : blurAmount;
+        } else {
+          const nextIndex = (currentIndex + 1) % words.length;
+          
+          if (animationPhase === 0 || animationPhase === 2) {
+            blurValue = index === currentIndex ? 0 : index === nextIndex ? blurAmount : blurAmount;
+          } else if (animationPhase === 1) {
+            blurValue = (index === currentIndex || index === nextIndex) ? 0 : blurAmount;
+          }
+        }
+
         const isActive = index === currentIndex;
         return (
           <span
@@ -73,13 +118,7 @@ const TrueFocus = ({
             ref={el => (wordRefs.current[index] = el)}
             className="relative text-[4rem] font-black cursor-pointer"
             style={{
-              filter: manualMode
-                ? isActive
-                  ? `blur(0px)`
-                  : `blur(${blurAmount}px)`
-                : isActive
-                  ? `blur(0px)`
-                  : `blur(${blurAmount}px)`,
+              filter: `blur(${blurValue}px)`,
               '--border-color': borderColor,
               '--glow-color': glowColor,
               transition: `filter ${animationDuration}s ease`,
