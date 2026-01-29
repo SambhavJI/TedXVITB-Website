@@ -52,6 +52,14 @@ export default function App() {
         buttonText="Read our Newsletter"
       />
 
+      <SideBySide
+        img="/1768898327065.png"
+        altText="TEDx Newsletter"
+        heading="From Turing to Today: The Making of Artificial Intelligence"
+        description="We drink AI like diet coke these days. Everywhere, all the time, barely thinking about it. Talk about it like it fell right out of the future."
+        buttonText="Read our Newsletter"
+      />
+
       {/* TEAM SECTION */}
       <section id="team">
         <TeamMarquee />

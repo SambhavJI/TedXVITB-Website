@@ -1,5 +1,4 @@
 import TextType from './TextType';
-import heroGraphic from '../public/abstract red.png';
 import TrueFocus from './TrueFocus';
 
 export default function Hero() {

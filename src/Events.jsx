@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 export default function Events() {
-    const eventDate = new Date('2026-02-12T00:00:00');
+    const eventDate = new Date('2026-02-13T00:00:00');
 
     const calculateTimeLeft = () => {
         const now = new Date();
@@ -64,7 +64,7 @@ export default function Events() {
                             <svg className="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
-                            <span className="text-red-500 text-sm font-medium">February 12, 2026 • Tentative</span>
+                            <span className="text-red-500 text-sm font-medium">February 13, 2026</span>
                         </div>
 
                         {/* Countdown Timer */}
@@ -86,7 +86,7 @@ export default function Events() {
                         {/* Theme Coming Soon */}
                         <div className="text-center border-t border-white/5 pt-8">
                             <p className="text-gray-500 text-sm uppercase tracking-widest mb-2">Event Theme</p>
-                            <p className="text-2xl md:text-3xl font-semibold text-gray-300">Coming Soon...</p>
+                            <p className="text-2xl md:text-3xl font-semibold text-gray-300">Beyond Origins</p>
                             <p className="text-gray-500 mt-4 max-w-md mx-auto">
                                 Stay tuned for announcements about our speakers, theme, and registration details.
                             </p>
