@@ -15,21 +15,25 @@ export default function Newsletter() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+
         if (formData.name && formData.email && formData.message) {
-            // Create mailto link with pre-filled content
-            const subject = encodeURIComponent(`Newsletter Contribution from ${formData.name}`);
+            const subject = encodeURIComponent(
+                `Newsletter Contribution from ${formData.name}`
+            );
+
             const body = encodeURIComponent(
                 `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
             );
-            const mailtoLink = `mailto:tedxchaptervitb@gmail.com?subject=${subject}&body=${body}`;
 
-            // Open email client
-            window.location.href = mailtoLink;
+            const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=tedxchaptervitb@gmail.com&su=${subject}&body=${body}`;
+
+            window.open(gmailLink, '_blank');
 
             setSubmitted(true);
             setFormData({ name: '', email: '', message: '' });
         }
     };
+
 
     return (
         <section className="scroll-section bg-black text-white py-24 px-6">

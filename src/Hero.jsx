@@ -1,5 +1,6 @@
 import TextType from './TextType';
 import heroGraphic from '../public/abstract red.png';
+import TrueFocus from './TrueFocus';
 
 export default function Hero() {
   const scrollToEvents = () => {
@@ -50,13 +51,14 @@ export default function Hero() {
         </div>
 
         {/* RIGHT GRAPHIC */}
-        <div className="relative flex justify-center items-center">
-          <img
-            src={heroGraphic}
-            alt="TEDx abstract design"
-            className="w-[85%] max-w-lg object-contain"
+          <TrueFocus
+            sentence="Beyond Origins"
+            manualMode={false}
+            blurAmount={9}
+            borderColor="#ed0534"
+            animationDuration={0.5}
+            pauseBetweenAnimations={2}
           />
-        </div>
 
       </div>
     </section>
