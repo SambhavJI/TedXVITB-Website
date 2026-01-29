@@ -45,7 +45,7 @@ export default function App() {
 
       {/* NEWSLETTER / BLOG */}
       <SideBySide
-        img="/public/1766179522124.jpg"
+        img="/1766179522124.jpg"
         altText="TEDx Newsletter"
         heading="TEDxVITBhopal 2025-26 : Comeback? …but what happened?"
         description="Every campus has a dream waiting for the right people to wake it up.If TED has taught us anything, it’s that one idea can rewrite the script. And this year, we decided to stop waiting for ideas…"
