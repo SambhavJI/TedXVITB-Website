@@ -25,10 +25,9 @@ export default function Home() {
     }, [hash]);
     return (
         <>
-            {/* HERO WITH DARKVEIL */}
             <section id="home" className="relative min-h-screen overflow-hidden">
                 <div className="absolute inset-0 z-0">
-                    <DarkVeil hueShift={232} speed={0.6} />
+                    {/* <DarkVeil hueShift={232} speed={0.6} /> */}
                 </div>
                 <div className="relative z-10">
                     <Hero />
