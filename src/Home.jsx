@@ -54,9 +54,25 @@ export default function Home() {
                 </p>
             </div>
             {/* SPEAKERS SECTION */}
-            <div className="flex justify-center">
-                <Speakers />
-                <Speakers />
+            <div className="flex flex-col items-center">
+                <Speakers
+                    name="Dr. Siddhartha Maiti"
+                    title="Cognitive Chrysalis"
+                    description="In an inspiring TED Talk, Dr. Siddhartha Maiti, Assistant Professor at VIT Bhopal University, recounts his journey from humble beginnings in India to academic and professional success in the United States, spanning the University of Massachusetts and leading biotechnology firms."
+                    image="/speaker1.jpeg"
+                    reversed={false}
+                    buttonText="View Past Events"
+                    buttonLink="/past-events"
+                />
+                <Speakers
+                    name="To be announced"
+                    title="Beyond Origins"
+                    description="Step into a world of transformation and discovery. Our upcoming speaker will explore the boundaries of heritage and innovation, challenging us to look beyond where we come from and focus on where we are headed."
+                    image="/download.jpg"
+                    reversed={true}
+                    buttonText="Register Now"
+                    buttonLink="https://forms.gle/your-form-link"
+                />
             </div>
             <div className="text-center mt-12">
                 <p className="text-gray-500 text-sm">
