@@ -123,7 +123,8 @@ export default function DotGridBackground() {
         }
 
         let particles = [];
-        const density = 0.00016;
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        const density = isMobile ? 0.00008 : 0.00016;
 
         const initParticles = () => {
             particles = [];

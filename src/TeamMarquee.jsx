@@ -57,6 +57,7 @@ export default function TeamMarquee() {
             display: flex;
             width: max-content;
             animation: scroll 80s linear infinite;
+            will-change: transform;
           }
           .marquee-container:hover .animate-marquee {
             animation-play-state: paused;
@@ -112,7 +113,7 @@ function TeamMemberCard({ member }) {
           alt={member.name}
           loading="lazy"
           decoding="async"
-          className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
+          className="w-full h-full object-cover md:grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
         />
 
         {/* Hover Overlay */}

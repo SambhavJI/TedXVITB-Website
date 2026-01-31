@@ -84,15 +84,18 @@ export default function Events() {
                             ))}
                         </div>
 
-                        {/* Theme Coming Soon */}
+                        {/* Theme Section */}
                         <div className="text-center border-t border-white/5 pt-8">
-                            <p className="text-gray-500 text-sm uppercase tracking-widest mb-2">Event Theme</p>
-                            <p className="text-2xl md:text-3xl font-semibold text-gray-300">Beyond Origins</p>
-                            <p className="text-gray-400 mt-4 leading-relaxed">
-                                Beyond Origins is about looking past the starting point. We often talk about where ideas begin, but not enough about what happens after. This theme explores how ideas, discoveries, systems, and even words grow and change over time, shaping the world around us.
-                                <br />
-                                It’s about understanding where something came from, where it stands today, and where it might be headed next. Beyond Origins celebrates the journey beyond roots and first steps, focusing on real impact, evolution, and the stories that continue long after the beginning.
-                            </p>
+                            <p className="text-gray-500 text-xs md:text-sm uppercase tracking-widest mb-2">Event Theme</p>
+                            <p className="text-3xl md:text-5xl font-black text-white italic mb-6">Beyond Origins</p>
+                            <div className="max-w-3xl mx-auto">
+                                <p className="text-gray-400 text-sm md:text-lg leading-relaxed mb-6">
+                                    Beyond Origins is about looking past the starting point. We often talk about where ideas begin, but not enough about what happens after. This theme explores how ideas, discoveries, systems, and even words grow and change over time, shaping the world around us.
+                                </p>
+                                <p className="text-gray-400 text-sm md:text-lg leading-relaxed">
+                                    Beyond Origins celebrates the journey beyond roots and first steps, focusing on real impact, evolution, and the stories that continue long after the beginning.
+                                </p>
+                            </div>
 
                             {/* Action Buttons */}
                             <div className="mt-10 flex flex-col md:flex-row items-center justify-center gap-4">

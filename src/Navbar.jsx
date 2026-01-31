@@ -147,8 +147,8 @@ export default function Navbar() {
 
       {/* MOBILE MENU */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-black/98 backdrop-blur-xl border-t border-white/10 shadow-2xl animate-in slide-in-from-top duration-300">
-          <ul className="flex flex-col items-center py-8 gap-6 text-sm font-semibold uppercase tracking-[0.2em] text-white">
+        <div className="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-2xl border-t border-white/5 shadow-2xl animate-in fade-in slide-in-from-top-4 duration-300">
+          <ul className="flex flex-col items-center py-10 gap-8 text-base font-bold uppercase tracking-[0.3em] text-white">
             {navItems.map(item => (
               <li key={item.name} className="w-full text-center">
                 <Link

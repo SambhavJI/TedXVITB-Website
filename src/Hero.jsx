@@ -14,10 +14,10 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
         {/* LEFT CONTENT */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 text-center lg:text-left items-center lg:items-start">
           {/* Headline */}
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            Ideas Change <span className="text-white">Everything</span>.
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-none tracking-tight">
+            Ideas Change <span className="text-red-600">Everything</span>.
           </h1>
 
           {/* Typed subtitle */}
@@ -31,12 +31,12 @@ export default function Hero() {
             pauseDuration={1200}
             showCursor={true}
             cursorCharacter="|"
-            className="text-lg md:text-xl text-gray-400"
+            className="text-base md:text-xl text-gray-400 font-medium"
           />
 
           {/* Description */}
-          <p className="text-gray-400 max-w-md leading-relaxed">
-            TED<span className="text-[1em] lowercase">x</span>VITBhopal brings together innovators, thinkers, and dreamers to share ideas
+          <p className="text-gray-400 text-sm md:text-base max-w-md leading-relaxed">
+            TED<span className="text-[1em] lowercase font-bold">x</span>VITBhopal brings together innovators, thinkers, and dreamers to share ideas
             that spark meaningful conversations and inspire positive change in our community.
           </p>
 

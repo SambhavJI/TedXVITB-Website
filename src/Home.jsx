@@ -46,20 +46,20 @@ export default function Home() {
                 <h2 className="scroll-text text-red-600 text-sm font-semibold tracking-widest uppercase mb-4">
                     Featured Speakers
                 </h2>
-                <h3 className="scroll-text text-4xl md:text-5xl font-bold mb-4">
+                <h3 className="scroll-text text-4xl md:text-5xl font-black mb-4 uppercase">
                     Voices That <span className="text-red-600">Inspire</span>
                 </h3>
                 <p className="scroll-text text-gray-400 max-w-2xl mx-auto">
-                    Meet the thought leaders who will share ideas worth spreading.
+                    Hear from visionary thinkers and doers who are redefining the boundaries of possibility.
                 </p>
             </div>
             {/* SPEAKERS SECTION */}
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center gap-0">
                 <Speakers
                     name="Dr. Siddhartha Maiti"
                     title="Cognitive Chrysalis"
-                    description="In an inspiring TED Talk, Dr. Siddhartha Maiti, Assistant Professor at VIT Bhopal University, recounts his journey from humble beginnings in India to academic and professional success in the United States, spanning the University of Massachusetts and leading biotechnology firms."
-                    image="/speaker1.jpeg"
+                    description="A pioneering voice in neuro-innovation, exploring how our minds evolve in the digital age. Join us as we delve into the metamorphosis of human intelligence."
+                    img="/speaker1.jpeg"
                     reversed={false}
                     buttonText="View Past Events"
                     buttonLink="/past-events"
@@ -67,8 +67,8 @@ export default function Home() {
                 <Speakers
                     name="To be announced"
                     title="Beyond Origins"
-                    description="Step into a world of transformation and discovery. Our upcoming speaker will explore the boundaries of heritage and innovation, challenging us to look beyond where we come from and focus on where we are headed."
-                    image="/download.jpg"
+                    description="Our next visionary speaker will challenge your perception of the future. Stay tuned for the big reveal of our second featured speaker for TEDxVITBhopal 2026."
+                    img="/download.jpg"
                     reversed={true}
                     buttonText="Register Now"
                     buttonLink="https://forms.gle/your-form-link"
@@ -80,12 +80,11 @@ export default function Home() {
                 </p>
             </div>
 
-            {/* NEWSLETTER / BLOG */}
             <SideBySide
                 img="/1766179522124.jpg"
                 altText="TEDx Newsletter"
                 heading="TEDxVITBhopal 2025-26 : Comeback? …but what happened?"
-                description="Every campus has a dream waiting for the right people to wake it up.If TED has taught us anything, it’s that one idea can rewrite the script. And this year, we decided to stop waiting for ideas…"
+                description="Every campus has a dream waiting for the right people to wake it up. If TED has taught us anything, it’s that one idea can rewrite the script. And this year, we decided to stop waiting for ideas…"
                 buttonText="Read our Newsletter"
             />
 
