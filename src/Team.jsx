@@ -11,7 +11,7 @@ export default function Team() {
                     </h3>
                     <p className="scroll-text text-gray-400 max-w-2xl mx-auto">
                         Meet the passionate individuals behind TEDxVITBhopal.
-                    </p>d
+                    </p>
                 </div>
             </div>
         </section>

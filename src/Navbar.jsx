@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,6 +20,7 @@ export default function Navbar() {
     { name: 'Events', href: '#events' },
     { name: 'Speakers', href: '#speakers' },
     { name: 'Team', href: '#team' },
+    { name: 'Past Events', href: '/past-events', isRoute: true },
   ];
 
   const socialLinks = [
@@ -49,13 +53,24 @@ export default function Navbar() {
     }
   ];
 
-  const handleNavClick = (e, href) => {
-    e.preventDefault();
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleNavClick = (e, item) => {
     setMobileMenuOpen(false);
+
+    if (item.isRoute) {
+      return; // Let standard Link handle it
+    }
+
+    e.preventDefault();
+
+    if (location.pathname !== '/') {
+      navigate('/' + item.href);
+      // We might need to handle scrolling after navigation in Home.jsx or using a hook
+    } else {
+      const element = document.querySelector(item.href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
   };
 
   return (
@@ -68,25 +83,25 @@ export default function Navbar() {
       >
 
         {/* LEFT: TEDx Logo / Name */}
-        <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
+        <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
           <img
             src="./logo-white.png"
             alt="TEDx Logo"
             className={`transition-all duration-300 ${scrolled ? 'h-6 md:h-7' : 'h-8 md:h-9'}`}
           />
-        </a>
+        </Link>
 
         {/* DESKTOP MENU */}
         <ul className="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-wider text-white">
           {navItems.map(item => (
             <li key={item.name} className="relative group cursor-pointer">
-              <a
-                href={item.href}
-                onClick={(e) => handleNavClick(e, item.href)}
+              <Link
+                to={item.isRoute ? item.href : '/'}
+                onClick={(e) => handleNavClick(e, item)}
                 className="transition-colors duration-200 group-hover:text-red-600"
               >
                 {item.name}
-              </a>
+              </Link>
               {/* Red underline */}
               <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-red-600 transition-all duration-300 group-hover:w-full"></span>
             </li>
@@ -136,13 +151,13 @@ export default function Navbar() {
           <ul className="flex flex-col items-center py-8 gap-6 text-sm font-semibold uppercase tracking-[0.2em] text-white">
             {navItems.map(item => (
               <li key={item.name} className="w-full text-center">
-                <a
-                  href={item.href}
-                  onClick={(e) => handleNavClick(e, item.href)}
+                <Link
+                  to={item.isRoute ? item.href : '/'}
+                  onClick={(e) => handleNavClick(e, item)}
                   className="block w-full py-2 hover:text-red-600 transition-colors duration-200"
                 >
                   {item.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

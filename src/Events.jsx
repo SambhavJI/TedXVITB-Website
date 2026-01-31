@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Events() {
     const eventDate = new Date('2026-02-13T00:00:00');
@@ -98,9 +99,9 @@ export default function Events() {
                                 <button className="w-full md:w-auto px-8 py-4 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transition-all duration-300 hover:scale-[1.02]">
                                     Register
                                 </button>
-                                <button className="w-full md:w-auto px-8 py-4 border border-white/10 text-white font-semibold rounded-xl hover:bg-white/5 transition-all duration-300">
+                                <Link to="/past-events" className="w-full md:w-auto px-8 py-4 border border-white/10 text-white font-semibold rounded-xl hover:bg-white/5 transition-all duration-300 text-center">
                                     View Past Events
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

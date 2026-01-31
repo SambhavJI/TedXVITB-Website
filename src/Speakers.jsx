@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Speakers() {
     // Placeholder speaker - update with real data when available
     const speaker = {
@@ -10,19 +12,6 @@ export default function Speakers() {
     return (
         <section id="speakers" className="scroll-section text-white py-24 px-6">
             <div className="max-w-5xl mx-auto">
-
-                {/* Section Header */}
-                <div className="text-center mb-16">
-                    <h2 className="scroll-text text-red-600 text-sm font-semibold tracking-widest uppercase mb-4">
-                        Featured Speakers
-                    </h2>
-                    <h3 className="scroll-text text-4xl md:text-5xl font-bold mb-4">
-                        Voices That <span className="text-red-600">Inspire</span>
-                    </h3>
-                    <p className="scroll-text text-gray-400 max-w-2xl mx-auto">
-                        Meet the thought leaders who will share ideas worth spreading.
-                    </p>
-                </div>
 
                 {/* Speaker Card */}
                 <div className="scroll-card max-w-2xl mx-auto">
@@ -50,16 +39,13 @@ export default function Speakers() {
                                 <p className="text-gray-400 text-sm leading-relaxed">
                                     {speaker.description}
                                 </p>
+                                <br />
+                                <Link to="/past-events" className="w-full md:w-auto px-8 py-4 border border-white/10 text-white font-semibold rounded-xl hover:bg-white/5 transition-all duration-300 text-center">
+                                    View Past Events
+                                </Link>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                {/* More Speakers Coming */}
-                <div className="text-center mt-12">
-                    <p className="text-gray-500 text-sm">
-                        More speakers will be announced soon. Follow us for updates!
-                    </p>
                 </div>
 
             </div>
