@@ -98,12 +98,12 @@ const TrueFocus = ({
     >
       {words.map((word, index) => {
         let blurValue = 0;
-        
+
         if (manualMode) {
           blurValue = index === currentIndex ? 0 : blurAmount;
         } else {
           const nextIndex = (currentIndex + 1) % words.length;
-          
+
           if (animationPhase === 0 || animationPhase === 2) {
             blurValue = index === currentIndex ? 0 : index === nextIndex ? blurAmount : blurAmount;
           } else if (animationPhase === 1) {
@@ -116,7 +116,7 @@ const TrueFocus = ({
           <span
             key={index}
             ref={el => (wordRefs.current[index] = el)}
-            className="relative text-[4rem] font-black cursor-pointer"
+            className="relative text-3xl md:text-5xl lg:text-[4rem] font-black cursor-pointer"
             style={{
               filter: `blur(${blurValue}px)`,
               '--border-color': borderColor,

@@ -16,7 +16,7 @@ export default function Hero() {
         {/* LEFT CONTENT */}
         <div className="flex flex-col gap-6">
           {/* Headline */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
             Ideas worth <span className="text-white">spreading</span>.
           </h1>
 
@@ -50,14 +50,14 @@ export default function Hero() {
         </div>
 
         {/* RIGHT GRAPHIC */}
-          <TrueFocus
-            sentence="Beyond Origins"
-            manualMode={false}
-            blurAmount={9}
-            borderColor="#ed0534"
-            animationDuration={0.5}
-            pauseBetweenAnimations={2}
-          />
+        <TrueFocus
+          sentence="Beyond Origins"
+          manualMode={false}
+          blurAmount={9}
+          borderColor="#ed0534"
+          animationDuration={0.5}
+          pauseBetweenAnimations={2}
+        />
 
       </div>
     </section>

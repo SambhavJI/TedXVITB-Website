@@ -62,8 +62,8 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 w-full z-50">
       <nav
         className={`mx-auto px-6 flex items-center justify-between transition-all duration-300 ${scrolled
-            ? 'max-w-5xl py-3 mt-2 bg-black/90 backdrop-blur-md rounded-full border border-white/10'
-            : 'max-w-7xl py-5 bg-transparent'
+          ? 'max-w-5xl py-3 mt-2 bg-black/90 backdrop-blur-md rounded-full border border-white/10'
+          : 'max-w-7xl py-5 bg-transparent'
           }`}
       >
 
@@ -72,7 +72,7 @@ export default function Navbar() {
           <img
             src="./logo-white.png"
             alt="TEDx Logo"
-            className={`transition-all duration-300 ${scrolled ? 'h-7' : 'h-9'}`}
+            className={`transition-all duration-300 ${scrolled ? 'h-6 md:h-7' : 'h-8 md:h-9'}`}
           />
         </a>
 
@@ -132,14 +132,14 @@ export default function Navbar() {
 
       {/* MOBILE MENU */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-md border-t border-white/10">
-          <ul className="flex flex-col items-center py-4 gap-4 text-sm font-medium uppercase tracking-wider text-white">
+        <div className="md:hidden absolute top-full left-0 w-full bg-black/98 backdrop-blur-xl border-t border-white/10 shadow-2xl animate-in slide-in-from-top duration-300">
+          <ul className="flex flex-col items-center py-8 gap-6 text-sm font-semibold uppercase tracking-[0.2em] text-white">
             {navItems.map(item => (
-              <li key={item.name}>
+              <li key={item.name} className="w-full text-center">
                 <a
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className="hover:text-red-600 transition-colors duration-200"
+                  className="block w-full py-2 hover:text-red-600 transition-colors duration-200"
                 >
                   {item.name}
                 </a>
@@ -147,14 +147,14 @@ export default function Navbar() {
             ))}
           </ul>
           {/* SOCIAL ICONS - MOBILE */}
-          <div className="flex justify-center gap-6 pb-4">
+          <div className="flex justify-center gap-8 pb-8">
             {socialLinks.map(social => (
               <a
                 key={social.name}
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/70 hover:text-red-500 transition-all duration-300"
+                className="text-white/60 hover:text-red-500 transition-all duration-300 scale-125"
                 title={social.name}
               >
                 {social.icon}

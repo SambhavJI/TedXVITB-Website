@@ -73,13 +73,13 @@ export default function TeamMarquee() {
 
       <div className="relative z-10">
         <div className="text-center mb-16 px-4">
-          <h2 className="text-5xl md:text-7xl font-black text-white mb-4 tracking-tight">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-4 tracking-tight">
             MEET THE <span className="text-red-600">TEAM</span>
           </h2>
-          <div className="flex items-center justify-center gap-3 mb-2">
-            <div className="w-12 h-[3px] bg-red-600"></div>
-            <span className="text-red-600 font-bold text-sm tracking-[0.3em]">IDEAS WORTH SPREADING</span>
-            <div className="w-12 h-[3px] bg-red-600"></div>
+          <div className="flex items-center justify-center gap-2 md:gap-3 mb-2">
+            <div className="w-8 md:w-12 h-[3px] bg-red-600"></div>
+            <span className="text-red-600 font-bold text-[10px] md:text-sm tracking-[0.2em] md:tracking-[0.3em]">IDEAS WORTH SPREADING</span>
+            <div className="w-8 md:w-12 h-[3px] bg-red-600"></div>
           </div>
         </div>
 
