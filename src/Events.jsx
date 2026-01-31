@@ -45,7 +45,7 @@ export default function Events() {
                         Upcoming Event
                     </h2>
                     <h3 className="scroll-text text-4xl md:text-5xl font-bold mb-4">
-                        TEDx<span className="text-red-600">VITBhopal</span> 2026
+                        TED<span className="text-[1em] lowercase">x</span><span className="text-red-600">VITBhopal</span> 2026
                     </h3>
                     <p className="scroll-text text-gray-400 max-w-2xl mx-auto">
                         Get ready for an inspiring day of ideas worth spreading.
@@ -87,9 +87,21 @@ export default function Events() {
                         <div className="text-center border-t border-white/5 pt-8">
                             <p className="text-gray-500 text-sm uppercase tracking-widest mb-2">Event Theme</p>
                             <p className="text-2xl md:text-3xl font-semibold text-gray-300">Beyond Origins</p>
-                            <p className="text-gray-500 mt-4 max-w-md mx-auto">
-                                Stay tuned for announcements about our speakers, theme, and registration details.
+                            <p className="text-gray-400 mt-4 leading-relaxed">
+                                Beyond Origins is about looking past the starting point. We often talk about where ideas begin, but not enough about what happens after. This theme explores how ideas, discoveries, systems, and even words grow and change over time, shaping the world around us.
+                                <br />
+                                It’s about understanding where something came from, where it stands today, and where it might be headed next. Beyond Origins celebrates the journey beyond roots and first steps, focusing on real impact, evolution, and the stories that continue long after the beginning.
                             </p>
+
+                            {/* Action Buttons */}
+                            <div className="mt-10 flex flex-col md:flex-row items-center justify-center gap-4">
+                                <button className="w-full md:w-auto px-8 py-4 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transition-all duration-300 hover:scale-[1.02]">
+                                    Register
+                                </button>
+                                <button className="w-full md:w-auto px-8 py-4 border border-white/10 text-white font-semibold rounded-xl hover:bg-white/5 transition-all duration-300">
+                                    View Past Events
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

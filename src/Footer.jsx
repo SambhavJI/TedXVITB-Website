@@ -48,7 +48,7 @@ export default function Footer() {
                     <div>
                         <img src="./logo-white.png" alt="TEDx Logo" className="h-8 mb-4" />
                         <p className="text-gray-400 text-sm leading-relaxed">
-                            Ideas worth spreading. TEDxVITBhopal is an independently organized TEDx event.
+                            Ideas worth spreading. TED<span className="text-[1em] lowercase">x</span>VITBhopal is an independently organized TED<span className="text-[1em] lowercase">x</span> event.
                         </p>
                     </div>
 
@@ -82,6 +82,10 @@ export default function Footer() {
                         <a href="mailto:tedx@vitbhopal.ac.in" className="text-red-500 text-sm hover:text-red-400 transition-colors">
                             tedx@vitbhopal.ac.in
                         </a>
+                        <br />
+                        <a href="mailto:tedxchaptervitb@gmail.com" className="text-red-500 text-sm hover:text-red-400 transition-colors">
+                            tedxchaptervitb@gmail.com
+                        </a>
                     </div>
 
                 </div>
@@ -107,7 +111,7 @@ export default function Footer() {
 
                     {/* Copyright */}
                     <p className="text-gray-500 text-xs text-center md:text-right">
-                        © {new Date().getFullYear()} TEDxVITBhopal. This independent TEDx event is operated under license from TED.
+                        © {new Date().getFullYear()} TED<span className="text-[1em] lowercase">x</span>VITBhopal. This independent TED<span className="text-[1em] lowercase">x</span> event is operated under license from TED.
                     </p>
 
                 </div>

@@ -5,29 +5,29 @@ export default function WhatIsTEDx() {
 
         <div className="max-w-4xl">
           <h2 className="scroll-text text-red-600 text-base md:text-lg font-semibold tracking-widest uppercase mb-8">
-            What is TEDx?
+            What is <span className="text-white">TED<span className="text-[1em] lowercase">x</span> ?</span>
           </h2>
 
           <p className="scroll-text text-gray-300 text-2xl md:text-3xl leading-relaxed font-light">
-            TEDx is a program of local, self-organized events that bring people together
-            to share a TED-like experience. At a TEDx event, TED Talks video and live
-            speakers combine to spark deep discussion and connection in a small group.
+            TED is a global platform that caters to a wide spectra of ideas and beliefs to the masses. It is dedicated to discussions on a wide variety of topics that are set to enlighten and break the shackles, opening up a whole new world of ideas unto us.
+            <br />
+            TED<span className="text-[1em] lowercase">x</span> events are independently organized experiences stemming out of the spirit of TED, thus spreading ideas that inspire, challenge, and ignite conversation.
+            <br />
+            The purpose of TED<span className="text-[1em] lowercase">x</span> is to create a local platform for global ideas, fostering dialogue, creativity, and meaningful discourses. It brings out the true sentiments from within the society onto a platform widely heard and regarded irrespective of the background.
           </p>
         </div>
 
         <div className="max-w-4xl">
           <h2 className="scroll-text text-red-600 text-base md:text-lg font-semibold tracking-widest uppercase mb-8">
-            What is TEDxVITBhopal?
+            What is TED<span className="text-[1em] lowercase">x</span><span className="text-white">VITBhopal ?</span>
           </h2>
 
           <p className="scroll-text text-gray-300 text-2xl md:text-3xl leading-relaxed font-light">
-            TEDxVITBhopal is an independently organized TEDx event hosted at VIT Bhopal
-            University. Our aim is to curate ideas and conversations that inspire,
-            challenge, and resonate beyond the stage.
+            TED<span className="text-[1em] lowercase">x</span>VITBhopal celebrates individuals who question the obvious, challenge the norm, and are driven by ideas that overflow with creativity. We embrace curious minds, bold thinkers, and talent in every form. Staying true to the spirit of TED, we believe that everyone has something amazing to offer.
           </p>
 
           <p className="scroll-text text-gray-500 text-base mt-10">
-            TEDx is an independently organized TED event, licensed by TED.
+            TED<span className="text-[1em] lowercase">x</span> is an independently organized TED event, licensed by TED.
           </p>
         </div>
 

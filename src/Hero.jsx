@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="flex flex-col gap-6">
           {/* Headline */}
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            Ideas worth <span className="text-white">spreading</span>.
+            Ideas Change <span className="text-white">Everything</span>.
           </h1>
 
           {/* Typed subtitle */}
@@ -36,7 +36,7 @@ export default function Hero() {
 
           {/* Description */}
           <p className="text-gray-400 max-w-md leading-relaxed">
-            TEDxVITBhopal brings together innovators, thinkers, and dreamers to share ideas
+            TED<span className="text-[1em] lowercase">x</span>VITBhopal brings together innovators, thinkers, and dreamers to share ideas
             that spark meaningful conversations and inspire positive change in our community.
           </p>
 

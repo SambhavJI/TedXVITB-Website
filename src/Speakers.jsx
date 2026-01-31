@@ -1,10 +1,10 @@
 export default function Speakers() {
     // Placeholder speaker - update with real data when available
     const speaker = {
-        name: "Speaker Name",
-        title: "Topic Coming Soon",
-        description: "Our first confirmed speaker will be announced soon. Stay tuned for an inspiring talk that challenges perspectives and sparks new ideas.",
-        image: "/download.jpg" // placeholder image
+        name: "Dr. Siddhartha Maiti",
+        title: "Cognitive Chrysalis",
+        description: "In an inspiring TED Talk, Dr. Siddhartha Maiti, Assistant Professor at VIT Bhopal University, recounts his journey from humble beginnings in India to academic and professional success in the United States, spanning the University of Massachusetts and leading biotechnology firms.",
+        image: "/speaker1.jpeg" // placeholder image
     };
 
     return (

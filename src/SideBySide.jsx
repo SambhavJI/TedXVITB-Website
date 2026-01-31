@@ -23,7 +23,7 @@ export default function SideBySide(info) {
             {description}
           </p>
 
-          <button onClick={() => window.location.href = "https://www.linkedin.com/pulse/from-cozy-blankets-open-conversations-house-tedxvitbhopal-x59zc/?trackingId=2CkeLCtMRK2SWeSn8DgTEw%3D%3D"} className="self-start border border-red-600 text-red-600 px-6 py-3 rounded-full hover:bg-red-600 hover:text-black transition">
+          <button onClick={() => window.location.href = "https://www.linkedin.com/newsletters/tedxvitbhopal-xpress-7353860993782808576"} className="self-start border border-red-600 text-red-600 px-6 py-3 rounded-full hover:bg-red-600 hover:text-black transition">
             {buttonText}
           </button>
         </div>

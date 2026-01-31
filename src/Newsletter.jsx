@@ -47,7 +47,7 @@ export default function Newsletter() {
                     Newsletter <span className="text-red-600">Contribution</span>
                 </h3>
                 <p className="scroll-text text-gray-400 mb-10 max-w-lg mx-auto">
-                    Have an idea worth spreading? Share your thoughts, stories, or insights with us and get featured in our TEDxVITBhopal newsletter.
+                    Have an idea worth spreading? Share your thoughts, stories, or insights with us and get featured in our TED<span className="text-[1em] lowercase">x</span>VITBhopal newsletter.
                 </p>
 
                 {/* Contribution Form */}
