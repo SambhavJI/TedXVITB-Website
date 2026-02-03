@@ -15,9 +15,9 @@ const teamMembers = [
     { name: "Atharva Dandwate", role: "Content & Editorial", img: "/Team-pics-optimized/ContentEditorial/Atharva Dandwate.jpg" },
     { name: "Diya Srivastava", role: "Content & Editorial", img: "/Team-pics-optimized/ContentEditorial/Diya Srivastava.jpg" },
     { name: "Yatharth Singh", role: "Content & Editorial", img: "/Team-pics-optimized/ContentEditorial/Yatharth Singh.jpg" },
-    // Event Management
-    { name: "Diya Raghuvanshi", role: "Event Management", img: "/Team-pics-optimized/Event Management_/ Diya Raghuvanshi.jpg" },
-    { name: "Rhythm Sharma", role: "Event Management", img: "/Team-pics-optimized/Event Management_/Rhythm Sharma.jpg" },
+  { name: "Diya Raghuvanshi", role: "Event Management", img: "/Team-pics-optimized/Event Management/ Diya Raghuvanshi.jpg" },
+  { name: "Rhythm Sharma", role: "Event Management", img: "/Team-pics-optimized/Event Management/Rhythm Sharma.jpg" },
+  { name: "Aswin Pillai", role: "Event Management", img: "/Team-pics-optimized/Event Management/Aswin Pillai.jpg" },
     // Event Tech
     { name: "Priyanshu", role: "Event Tech", img: "/Team-pics-optimized/Event Tech/Priyanshu.jpg" },
     // Finance & Sponsorship

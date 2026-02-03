@@ -8,6 +8,7 @@ import SideBySide from './SideBySide';
 import Newsletter from './Newsletter';
 import DarkVeil from './DarkVeil';
 import RegistrationPopup from './RegistrationPopup';
+import TeamMarquee from './TeamMarquee';
 
 export default function Home() {
     const { hash } = useLocation();
@@ -133,6 +134,8 @@ export default function Home() {
                 description="We drink AI like diet coke these days. Everywhere, all the time, barely thinking about it. Talk about it like it fell right out of the future."
                 buttonText="Read our Newsletter"
             />
+
+            <TeamMarquee />
 
             {/* NEWSLETTER SIGNUP */}
             <Newsletter />
