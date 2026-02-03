@@ -99,9 +99,14 @@ export default function Events() {
 
                             {/* Action Buttons */}
                             <div className="mt-10 flex flex-col md:flex-row items-center justify-center gap-4">
-                                <button className="w-full md:w-auto px-8 py-4 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transition-all duration-300 hover:scale-[1.02]">
+                                <a
+                                    href="https://forms.gle/5J6t5G32nbhLjENq5"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full md:w-auto px-8 py-4 bg-red-600 text-white font-semibold rounded-xl hover:bg-red-700 transition-all duration-300 hover:scale-[1.02] text-center"
+                                >
                                     Register
-                                </button>
+                                </a>
                                 <Link to="/past-events" className="w-full md:w-auto px-8 py-4 border border-white/10 text-white font-semibold rounded-xl hover:bg-white/5 transition-all duration-300 text-center">
                                     View Past Events
                                 </Link>
