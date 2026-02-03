@@ -95,7 +95,7 @@ export default function Home() {
                     title="Cognitive Chrysalis"
                     description="A pioneering voice in neuro-innovation, exploring how our minds evolve in the digital age. Join us as we delve into the metamorphosis of human intelligence."
                     img="/speaker1.jpeg"
-                    reversed={true}
+                    reversed={false}
                     buttonText="View Past Events"
                     buttonLink="/past-events"
                 />
