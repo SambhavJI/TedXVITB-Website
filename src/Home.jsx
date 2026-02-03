@@ -5,9 +5,9 @@ import WhatIsTEDx from './WhatIsTEDx';
 import Events from './Events';
 import Speakers from './Speakers';
 import SideBySide from './SideBySide';
-import TeamMarquee from './TeamMarquee';
 import Newsletter from './Newsletter';
 import DarkVeil from './DarkVeil';
+import RegistrationPopup from './RegistrationPopup';
 
 export default function Home() {
     const { hash } = useLocation();
@@ -25,6 +25,7 @@ export default function Home() {
     }, [hash]);
     return (
         <>
+            <RegistrationPopup />
             <section id="home" className="relative min-h-screen overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     {/* <DarkVeil hueShift={232} speed={0.6} /> */}
@@ -82,9 +83,9 @@ export default function Home() {
                     buttonLink="https://forms.gle/5J6t5G32nbhLjENq5"
                 />
                 <Speakers
-                    name="Dr. Rita Mendonca"
+                    name="Ms. Rita Mendonca"
                     title="Beyond Origins"
-                    description="Dr. Rita Mendonca is the founder of My Mind Gains, a psychologist and therapist known for making mental health conversations accessible and engaging. Featured in The Times of India and Hindustan Times, she creates insightful content by breaking down psychological concepts through films and everyday narratives. In her talk, she explores deeply rooted ideas like Mauna (silence), how they were originally practiced, and how they are perceived in the modern world"
+                    description="Ms. Rita Mendonca is the founder of My Mind Gains, a psychologist and therapist known for making mental health conversations accessible and engaging. Featured in The Times of India and Hindustan Times, she creates insightful content by breaking down psychological concepts through films and everyday narratives. In her talk, she explores deeply rooted ideas like Mauna (silence), how they were originally practiced, and how they are perceived in the modern world"
                     img="/speaker5.jpeg"
                     reversed={true}
                     buttonText="Register Now"
@@ -99,11 +100,6 @@ export default function Home() {
                     buttonText="View Past Events"
                     buttonLink="/past-events"
                 />
-            </div>
-            <div className="text-center mt-12">
-                <p className="text-gray-500 text-sm">
-                    More speakers will be announced soon. Follow us for updates!
-                </p>
             </div>
 
             <SideBySide
@@ -121,11 +117,6 @@ export default function Home() {
                 description="We drink AI like diet coke these days. Everywhere, all the time, barely thinking about it. Talk about it like it fell right out of the future."
                 buttonText="Read our Newsletter"
             />
-
-            {/* TEAM SECTION */}
-            <section id="team">
-                <TeamMarquee />
-            </section>
 
             {/* NEWSLETTER SIGNUP */}
             <Newsletter />

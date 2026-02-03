@@ -19,7 +19,7 @@ export default function Navbar() {
     { name: 'About', href: '#about' },
     { name: 'Events', href: '#events' },
     { name: 'Speakers', href: '#speakers' },
-    { name: 'Team', href: '#team' },
+    { name: 'Team', href: '/team', isRoute: true },
     { name: 'Past Events', href: '/past-events', isRoute: true },
   ];
 

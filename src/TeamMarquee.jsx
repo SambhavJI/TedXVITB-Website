@@ -39,7 +39,7 @@ const teamMembers = [
   { name: "Arushi Bakshi", role: "Production", img: "/Team-pics-optimized/Production_/Arushi Bakshi.jpg" },
   // Social Media & PR Outreach
   { name: "Dyutiman Bharadwaj", role: "Social Media & PR Outreach", img: "/Team-pics-optimized/Social media & Pr Outreach_/ Dyutiman Bharadwaj.jpg" },
-  { name: "Gunwaan Bareja", role: "Social Media & PR Outreach", img: "/Team-pics-optimized/Social media & Pr Outreach_/ Gunwaan Bareja.jpg" },
+  { name: "Gunwaan Bareja", role: "Junior Student Co-ordinator", img: "/Team-pics-optimized/Social media & Pr Outreach_/ Gunwaan Bareja.jpg" },
   { name: "Dikshika", role: "Social Media & PR Outreach", img: "/Team-pics-optimized/Social media & Pr Outreach_/Dikshika.jpg" },
 ];
 
