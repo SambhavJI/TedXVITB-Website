@@ -100,6 +100,22 @@ export default function Home() {
                     buttonText="View Past Events"
                     buttonLink="/past-events"
                 />
+
+                <br />
+                <br />
+                <br />
+
+            </div>
+            <div className="text-center mb-16">
+                <h2 className="scroll-text text-red-600 text-sm font-semibold tracking-widest uppercase mb-4">
+                    Newsletter
+                </h2>
+                <h3 className="scroll-text text-4xl md:text-5xl font-bold mb-4">
+                    TED<span className="text-[1em] lowercase">x</span><span className="text-red-600">VITBhopal</span> Xpress
+                </h3>
+                <p className="scroll-text text-gray-400 max-w-2xl mx-auto">
+                    This newsletter shares updates, news, facts, ideas, learning, unlearning, BTS's , moments, and voices every idea
+                </p>
             </div>
 
             <SideBySide

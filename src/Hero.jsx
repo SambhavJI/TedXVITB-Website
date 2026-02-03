@@ -16,8 +16,8 @@ export default function Hero() {
         {/* LEFT CONTENT */}
         <div className="flex flex-col gap-6 text-center lg:text-left items-center lg:items-start">
           {/* Headline */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-none tracking-tight">
-            Ideas Change <span className="text-red-600">Everything</span>.
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-none tracking-tight text-glow">
+            Ideas Change <span className="text-red-600 text-glow-red">Everything</span>.
           </h1>
 
           {/* Typed subtitle */}
