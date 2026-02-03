@@ -23,7 +23,7 @@ const teamMembers = [
   { name: "Aarushi Garg", role: "Finance & Sponsorship", img: "/Team-pics-optimized/Finance & Sponsorship_/Aarushi Garg.jpg" },
   { name: "Yokesh T", role: "Finance & Sponsorship", img: "/Team-pics-optimized/Finance & Sponsorship_/Yokesh T.jpg" },
   // Logistics & Hospitality
-  { name: "Shivang Mishra", role: "Logistics & Hospitality", img: "/Team-pics-optimized/Logistics & Hospitality_/Shivang Mishra.jpg" },
+  { name: "Shivang Mishra", role: "Operations Manager", img: "/Team-pics-optimized/Logistics & Hospitality_/Shivang Mishra.jpg" },
   // Photography & Video Editing
   { name: "Deeptanshu Kumar Singh", role: "Photography & Video Editing", img: "/Team-pics-optimized/Photography & Video editing_/ Deeptanshu Kumar Singh.jpg" },
   { name: "Harsh Bokade", role: "Photography & Video Editing", img: "/Team-pics-optimized/Photography & Video editing_/ Harsh Bokade.jpg" },
@@ -31,7 +31,7 @@ const teamMembers = [
   { name: "Tuhin Rakshit", role: "Photography & Video Editing", img: "/Team-pics-optimized/Photography & Video editing_/Tuhin Rakshit.jpg" },
   // Planning & Curation
   { name: "Rishit Singh", role: "Planning & Curation", img: "/Team-pics-optimized/Planning & Curation/ Rishit Singh.jpg" },
-  { name: "Aryaman Jha", role: "Planning & Curation", img: "/Team-pics-optimized/Planning & Curation/Aryaman Jha.jpg" },
+  { name: "Aryaman Jha", role: "Operations Manager", img: "/Team-pics-optimized/Planning & Curation/Aryaman Jha.jpg" },
   { name: "Rachit Vaishnav", role: "Planning & Curation", img: "/Team-pics-optimized/Planning & Curation/Rachit Vaishnav.jpg" },
   { name: "Shubhangana Kanthed", role: "Planning & Curation", img: "/Team-pics-optimized/Planning & Curation/Shubhangana Kanthed.jpg" },
   // Production
