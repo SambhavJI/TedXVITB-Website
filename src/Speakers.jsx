@@ -12,14 +12,14 @@ const Speakers = ({
     const isInternal = buttonLink.startsWith('/') || buttonLink.startsWith('#');
 
     return (
-        <div className="w-full max-w-6xl mx-auto px-6 py-12">
+        <div className="w-full max-w-7xl mx-auto px-6 py-12">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-neutral-900/50 rounded-3xl overflow-hidden border border-white/5 hover:border-red-600/20 transition-all duration-500 group">
                 {/* Image Section */}
-                <div className={`relative h-64 md:h-96 overflow-hidden ${reversed ? 'md:order-last' : ''}`}>
+                <div className={`relative h-80 md:h-[500px] overflow-hidden ${reversed ? 'md:order-last' : ''}`}>
                     <img
                         src={img}
                         alt={name}
-                        className="w-full h-full object-cover md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                        className="w-full h-full object-cover object-top md:grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 to-transparent"></div>
                 </div>

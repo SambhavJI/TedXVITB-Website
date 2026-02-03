@@ -64,11 +64,38 @@ export default function Home() {
                     buttonLink="/past-events"
                 />
                 <Speakers
-                    name="To be announced"
+                    name="Mr. Srihari Mulgund"
                     title="Beyond Origins"
-                    description="Our next visionary speaker will challenge your perception of the future. Stay tuned for the big reveal of our second featured speaker for TEDxVITBhopal 2026."
-                    img="/download.jpg"
+                    description="Mr. Srihari Mulgund is a Partner at EY-Parthenon and leads the Automotive Strategy practice, with experience executing 100+ strategic initiatives across global markets including the US, EU, India, Japan, and China. In his talk, he explores how strategy, leadership, and the startup mindset have evolved beyond traditional systems of building, reshaping the way organizations grow and lead today."
+                    img="/speaker2.jpeg"
                     reversed={true}
+                    buttonText="Register Now"
+                    buttonLink="https://forms.gle/your-form-link"
+                />
+                <Speakers
+                    name="Dr. Atun Roy Choudhury"
+                    title="Beyond Origins"
+                    description="Dr. Atun Roy Choudhury is an environmentalist with a PhD from BITS Pilani and the Technical Head at Unison i3x. He is the innovator behind the SAAnA Reactor, India’s first indigenous system converting non-segregated organic waste into electricity in just 23 days. In his talk, he explores how sustainability has evolved beyond an environmental concern into a growing professional and career-driven sector, shaping new opportunities for the future. Beyond science, he is also a passionate singer."
+                    img="/speaker3.png"
+                    reversed={false}
+                    buttonText="Register Now"
+                    buttonLink="https://forms.gle/your-form-link"
+                />
+                <Speakers
+                    name="Mr. Vijay Sharma"
+                    title="Beyond Origins"
+                    description="Mr. Vijay Sharma is a tech entrepreneur, angel investor, and reluctant philosopher. An IIM Bangalore alumnus, he has spent over a decade building one of India’s largest mental health platform, impacting 4.5 million employees across 600+ organizations. In his talk, he explores Zen philosophy and koans, and their relevance in today’s world, highlighting how some problems aren’t meant to be solved, and how some people need listening, not advice."
+                    img="/speaker4.jpeg"
+                    reversed={true}
+                    buttonText="Register Now"
+                    buttonLink="https://forms.gle/your-form-link"
+                />
+                <Speakers
+                    name="Dr. Rita Mendonca"
+                    title="Beyond Origins"
+                    description="Dr. Rita Mendonca is the founder of My Mind Gains, a psychologist and therapist known for making mental health conversations accessible and engaging. Featured in The Times of India and Hindustan Times, she creates insightful content by breaking down psychological concepts through films and everyday narratives. In her talk, she explores deeply rooted ideas like Mauna (silence), how they were originally practiced, and how they are perceived in the modern world"
+                    img="/speaker5.jpeg"
+                    reversed={false}
                     buttonText="Register Now"
                     buttonLink="https://forms.gle/your-form-link"
                 />

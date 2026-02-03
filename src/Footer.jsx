@@ -39,7 +39,7 @@ export default function Footer() {
                     <div>
                         <img src="./logo-white.png" alt="TEDx Logo" className="h-8 mb-4" />
                         <p className="text-gray-400 text-sm leading-relaxed">
-                            Ideas worth spreading. TED<span className="text-[1em] lowercase">x</span>VITBhopal is an independently organized TED<span className="text-[1em] lowercase">x</span> event.
+                            Ideas worth spreading. TED<span className="text-[1em] lowercase font-normal">x</span>VITBhopal is an independently organized TED<span className="text-[1em] lowercase font-normal">x</span> event.
                         </p>
                     </div>
 
@@ -102,7 +102,7 @@ export default function Footer() {
 
                     {/* Copyright */}
                     <p className="text-gray-500 text-[10px] md:text-xs text-center md:text-right uppercase tracking-widest">
-                        © {new Date().getFullYear()} TED<span className="text-[1em] lowercase font-bold">x</span>VITBhopal. This independent TED<span className="text-[1em] lowercase font-bold">x</span> event is operated under license from TED.
+                        © {new Date().getFullYear()} TED<span className="text-[1em] lowercase font-normal">x</span>VITBhopal. This independent TED<span className="text-[1em] lowercase font-normal">x</span> event is operated under license from TED.
                     </p>
 
                 </div>
