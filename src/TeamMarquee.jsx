@@ -1,47 +1,48 @@
 import React from "react";
 
 const teamMembers = [
-  // Organiser & President
-  { name: "Vidisha Adhiya", role: "Organiser & President", img: "/Team-pics-optimized/Organiser & President_/Vidisha Adhiya_.jpg" },
-  // Web & App Development
-  { name: "Sambhav Trivedi", role: "Web & App Development", img: "/Team-pics-optimized/Web & App development_/ Sambhav Trivedi.jpg" },
-  { name: "Mrinal Mohit", role: "Web & App Development", img: "/Team-pics-optimized/Web & App development_/Mrinal Mohit.jpg" },
-  // Design & Branding
-  { name: "Sakshi Sharma", role: "Design & Branding", img: "/Team-pics-optimized/Design & Branding/ Sakshi Sharma.jpg" },
-  { name: "Sambhavi Tiwari", role: "Design & Branding", img: "/Team-pics-optimized/Design & Branding/ Sambhavi Tiwari.jpg" },
-  { name: "Vidhu Vinod", role: "Design & Branding", img: "/Team-pics-optimized/Design & Branding/Vidhu Vinod.jpg" },
-  // Content & Editorial
-  { name: "Atharva Dandwate", role: "Content & Editorial", img: "/Team-pics-optimized/ContentEditorial/Atharva Dandwate.jpg" },
-  { name: "Diya Srivastava", role: "Content & Editorial", img: "/Team-pics-optimized/ContentEditorial/Diya Srivastava.jpg" },
-  { name: "Yatharth Singh", role: "Content & Editorial", img: "/Team-pics-optimized/ContentEditorial/Yatharth Singh.jpg" },
-  // Event Management
+    { name: "Pushpdant Jain", role: "Faculty Co-ordinator", img: "/Team-pics-optimized/sir.jpeg" },
+    { name: "Yogesh Shukla", role: "Faculty Co-ordinator", img: "/Team-pics-optimized/maam.jpeg" },
+    // Organiser & President
+    { name: "Vidisha Adhiya", role: "Organiser & President", img: "/Team-pics-optimized/Organiser & President_/Vidisha Adhiya_.jpg" },
+    // Web & App Development
+    { name: "Aryaman Jha", role: "Operations Manager", img: "/Team-pics-optimized/Planning & Curation/Aryaman Jha.jpg" },
+    { name: "Shivang Mishra", role: "Operations Manager", img: "/Team-pics-optimized/Logistics & Hospitality_/Shivang Mishra.jpg" },
+    { name: "Gunwaan Bareja", role: "Junior Student Co-ordinator", img: "/Team-pics-optimized/Social media & Pr Outreach_/ Gunwaan Bareja.jpg" },
+    { name: "Sakshi Sharma", role: "Design & Branding", img: "/Team-pics-optimized/Design & Branding/ Sakshi Sharma.jpg" },
+    { name: "Sambhavi Tiwari", role: "Design & Branding", img: "/Team-pics-optimized/Design & Branding/ Sambhavi Tiwari.jpg" },
+    { name: "Vidhu Vinod", role: "Design & Branding", img: "/Team-pics-optimized/Design & Branding/Vidhu Vinod.jpg" },
+    { name: "Sambhav Trivedi", role: "Web & App Development", img: "/Team-pics-optimized/Web & App development_/ Sambhav Trivedi.jpg" },
+    { name: "Mrinal Mohit", role: "Web & App Development", img: "/Team-pics-optimized/Web & App development_/Mrinal Mohit.jpg" },
+    // Design & Branding
+    // Content & Editorial
+    { name: "Atharva Dandwate", role: "Content & Editorial", img: "/Team-pics-optimized/ContentEditorial/Atharva Dandwate.jpg" },
+    { name: "Diya Srivastava", role: "Content & Editorial", img: "/Team-pics-optimized/ContentEditorial/Diya Srivastava.jpg" },
+    { name: "Yatharth Singh", role: "Content & Editorial", img: "/Team-pics-optimized/ContentEditorial/Yatharth Singh.jpg" },
   { name: "Diya Raghuvanshi", role: "Event Management", img: "/Team-pics-optimized/Event Management/ Diya Raghuvanshi.jpg" },
   { name: "Rhythm Sharma", role: "Event Management", img: "/Team-pics-optimized/Event Management/Rhythm Sharma.jpg" },
   { name: "Aswin Pillai", role: "Event Management", img: "/Team-pics-optimized/Event Management/Aswin Pillai.jpg" },
-  // Event Tech
-  { name: "Priyanshu", role: "Event Tech", img: "/Team-pics-optimized/Event Tech/Priyanshu.jpg" },
-  // Finance & Sponsorship
-  { name: "Aarushi Garg", role: "Finance & Sponsorship", img: "/Team-pics-optimized/Finance & Sponsorship_/Aarushi Garg.jpg" },
-  { name: "Yokesh T", role: "Finance & Sponsorship", img: "/Team-pics-optimized/Finance & Sponsorship_/Yokesh T.jpg" },
-  // Logistics & Hospitality
-  { name: "Shivang Mishra", role: "Operations Manager", img: "/Team-pics-optimized/Logistics & Hospitality_/Shivang Mishra.jpg" },
-  // Photography & Video Editing
-  { name: "Deeptanshu Kumar Singh", role: "Photography & Video Editing", img: "/Team-pics-optimized/Photography & Video editing_/ Deeptanshu Kumar Singh.jpg" },
-  { name: "Harsh Bokade", role: "Photography & Video Editing", img: "/Team-pics-optimized/Photography & Video editing_/ Harsh Bokade.jpg" },
-  { name: "Aryan Jain", role: "Photography & Video Editing", img: "/Team-pics-optimized/Photography & Video editing_/Aryan Jain.jpg" },
-  { name: "Tuhin Rakshit", role: "Photography & Video Editing", img: "/Team-pics-optimized/Photography & Video editing_/Tuhin Rakshit.jpg" },
-  // Planning & Curation
-  { name: "Rishit Singh", role: "Planning & Curation", img: "/Team-pics-optimized/Planning & Curation/ Rishit Singh.jpg" },
-  { name: "Aryaman Jha", role: "Operations Manager", img: "/Team-pics-optimized/Planning & Curation/Aryaman Jha.jpg" },
-  { name: "Rachit Vaishnav", role: "Planning & Curation", img: "/Team-pics-optimized/Planning & Curation/Rachit Vaishnav.jpg" },
-  { name: "Shubhangana Kanthed", role: "Planning & Curation", img: "/Team-pics-optimized/Planning & Curation/Shubhangana Kanthed.jpg" },
-  // Production
-  { name: "Abhidha Gupta", role: "Production", img: "/Team-pics-optimized/Production_/Abhidha Gupta.jpg" },
-  { name: "Arushi Bakshi", role: "Production", img: "/Team-pics-optimized/Production_/Arushi Bakshi.jpg" },
-  // Social Media & PR Outreach
-  { name: "Dyutiman Bharadwaj", role: "Social Media & PR Outreach", img: "/Team-pics-optimized/Social media & Pr Outreach_/ Dyutiman Bharadwaj.jpg" },
-  { name: "Gunwaan Bareja", role: "Junior Student Co-ordinator", img: "/Team-pics-optimized/Social media & Pr Outreach_/ Gunwaan Bareja.jpg" },
-  { name: "Dikshika", role: "Social Media & PR Outreach", img: "/Team-pics-optimized/Social media & Pr Outreach_/Dikshika.jpg" },
+    // Event Tech
+    { name: "Priyanshu", role: "Event Tech", img: "/Team-pics-optimized/Event Tech/Priyanshu.jpg" },
+    // Finance & Sponsorship
+    { name: "Aarushi Garg", role: "Finance & Sponsorship", img: "/Team-pics-optimized/Finance & Sponsorship_/Aarushi Garg.jpg" },
+    { name: "Yokesh T", role: "Finance & Sponsorship", img: "/Team-pics-optimized/Finance & Sponsorship_/Yokesh T.jpg" },
+    // Logistics & Hospitality
+    // Photography & Video Editing
+    { name: "Deeptanshu Kumar Singh", role: "Photography & Video Editing", img: "/Team-pics-optimized/Photography & Video editing_/ Deeptanshu Kumar Singh.jpg" },
+    { name: "Harsh Bokade", role: "Photography & Video Editing", img: "/Team-pics-optimized/Photography & Video editing_/ Harsh Bokade.jpg" },
+    { name: "Aryan Jain", role: "Photography & Video Editing", img: "/Team-pics-optimized/Photography & Video editing_/Aryan Jain.jpg" },
+    { name: "Tuhin Rakshit", role: "Photography & Video Editing", img: "/Team-pics-optimized/Photography & Video editing_/Tuhin Rakshit.jpg" },
+    // Planning & Curation
+    { name: "Rishit Singh", role: "Planning & Curation", img: "/Team-pics-optimized/Planning & Curation/ Rishit Singh.jpg" },
+    { name: "Rachit Vaishnav", role: "Planning & Curation", img: "/Team-pics-optimized/Planning & Curation/Rachit Vaishnav.jpg" },
+    { name: "Shubhangana Kanthed", role: "Planning & Curation", img: "/Team-pics-optimized/Planning & Curation/Shubhangana Kanthed.jpg" },
+    // Production
+    { name: "Abhidha Gupta", role: "Production", img: "/Team-pics-optimized/Production_/Abhidha Gupta.jpg" },
+    { name: "Arushi Bakshi", role: "Production", img: "/Team-pics-optimized/Production_/Arushi Bakshi.jpg" },
+    // Social Media & PR Outreach
+    { name: "Dyutiman Bharadwaj", role: "Social Media & PR Outreach", img: "/Team-pics-optimized/Social media & Pr Outreach_/ Dyutiman Bharadwaj.jpg" },
+    { name: "Dikshika", role: "Social Media & PR Outreach", img: "/Team-pics-optimized/Social media & Pr Outreach_/Dikshika.jpg" },
 ];
 
 export default function TeamMarquee() {

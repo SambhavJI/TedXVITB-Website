@@ -1,4 +1,6 @@
 const teamMembers = [
+    { name: "Pushpdant Jain", role: "Faculty Co-ordinator", img: "/Team-pics-optimized/sir.jpeg" },
+    { name: "Yogesh Shukla", role: "Faculty Co-ordinator", img: "/Team-pics-optimized/maam.jpeg" },
     // Organiser & President
     { name: "Vidisha Adhiya", role: "Organiser & President", img: "/Team-pics-optimized/Organiser & President_/Vidisha Adhiya_.jpg" },
     // Web & App Development

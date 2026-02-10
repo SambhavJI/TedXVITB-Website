@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Events() {
-    const eventDate = new Date('2026-02-13T00:00:00');
+    const eventDate = new Date('2026-03-13T00:00:00');
 
     const calculateTimeLeft = () => {
         const now = new Date();
@@ -65,7 +65,7 @@ export default function Events() {
                             <svg className="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
-                            <span className="text-red-500 text-sm font-medium">February 13, 2026</span>
+                            <span className="text-red-500 text-sm font-medium">To Be Announced</span>
                         </div>
 
                         {/* Countdown Timer */}
