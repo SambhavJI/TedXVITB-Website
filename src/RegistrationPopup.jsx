@@ -47,7 +47,7 @@ const RegistrationPopup = () => {
                         {/* Event Image */}
                         <div className="relative w-full overflow-hidden flex justify-center bg-black/40">
                             <img
-                                src="/BEYOND_ORIGINS.png"
+                                src="/popup.jpeg"
                                 alt="Club Event Registration"
                                 className="w-full h-auto max-h-[60vh] object-contain block"
                             />

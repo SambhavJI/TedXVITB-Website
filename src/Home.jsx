@@ -57,15 +57,6 @@ export default function Home() {
             {/* SPEAKERS SECTION */}
             <div className="flex flex-col items-center gap-0">
                 <Speakers
-                    name="Mr. Srihari Mulgund"
-                    title="Beyond Origins"
-                    description="Mr. Srihari Mulgund is a Partner at EY-Parthenon and leads the Automotive Strategy practice, with experience executing 100+ strategic initiatives across global markets including the US, EU, India, Japan, and China. In his talk, he explores how strategy, leadership, and the startup mindset have evolved beyond traditional systems of building, reshaping the way organizations grow and lead today."
-                    img="/speaker2.jpeg"
-                    reversed={false}
-                    buttonText="Register Now"
-                    buttonLink="https://forms.gle/5J6t5G32nbhLjENq5"
-                />
-                <Speakers
                     name="Dr. Atun Roy Choudhury"
                     title="Beyond Origins"
                     description="Dr. Atun Roy Choudhury is an environmentalist with a PhD from BITS Pilani and the Technical Head at Unison i3x. He is the innovator behind the SAAnA Reactor, India’s first indigenous system converting non-segregated organic waste into electricity in just 23 days. In his talk, he explores how sustainability has evolved beyond an environmental concern into a growing professional and career-driven sector, shaping new opportunities for the future. Beyond science, he is also a passionate singer."
